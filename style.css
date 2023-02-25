@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  min-height: 100vh;
+}
+
+main-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  width: 600px;
+}
+
+img {
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.actual-price {
+  margin-right: 10px;
+}
+
+.rich-text {
+  background-color: white;
+  padding: 35px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.richt-text__heading {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+  font-size: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.rich-text__paragraph {
+  padding-top: 10px;
+}
+
+.rich-text__category {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.actual-price {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 1.8rem;
+  margin-right: 20px;
+}
+
+.list-price {
+  text-decoration: line-through;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-style: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: hsl(158, 45%, 20%);
+}
+
+button:active {
+  background-color: hsl(158, 45%, 20%);
+}
+
+.fa-cart-shopping {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    width: 400px;
+  }
+
+  .rich-text {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .richt-text__heading {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .rich-text__paragraph {
+    padding: 0;
+  }
+
+  .prices {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+}
